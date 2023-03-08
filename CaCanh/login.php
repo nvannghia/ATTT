@@ -32,14 +32,7 @@
   }
 }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-<title>Đăng nhập</title>
-</head>
-<body>
+
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
   <div class="imgcontainer">
     <img src="Images/logo.jpg" alt="Avatar" class="avatar">
@@ -53,7 +46,7 @@
     <input type="password" placeholder="Enter Password" name="psw" required>
         
     <button type="submit" name ="login">Login</button>
-    <button type="submit" name ="register">Register</button>
+     Don't have account? <a href="register.php">Sign up here</a> <br>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
@@ -64,7 +57,6 @@
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
-
 </body>
 </html>
 
