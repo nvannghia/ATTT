@@ -34,6 +34,9 @@
                     <input class="form-control me-2" type="text" placeholder="Search">
                     <button class="btn btn-primary" type="button">Search</button>
                 </form>
+
+                <button type="button" class="btn btn-primary">Đăng Nhập</button>
+                <button type="button" class="btn btn-primary">Đăng Ký</button>
             </div>
         </div>
         </nav>
