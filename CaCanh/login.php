@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
           break;
         }
       }
-      echo "<p class='text-danger'>Incorrected account!</p>";
+      echo "<p style='color:red; font-weight:700''>Incorrected account!</p>";
     } catch (PDOException $e) {
       echo "Connection failed! Error:" . $e->getMessage();
     }
