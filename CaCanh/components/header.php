@@ -44,7 +44,7 @@
                 <form class="d-flex form-container" style="border:none; width:50%">
                     <input class="form-control me-2" style="width:100%;height:40px;margin-right:5px" type="text" placeholder="Search">
                     <button class="btn btn-primary " style="width:70px;height:40px;margin-right:5px" type="button">Search</button>
-                    <button type="button"  class="btn btn-primary btn-style">Đăng Nhập</button>
+                    <button type="button"  class="btn btn-primary btn-style"> Đăng Nhập</button>
                     <button type="button"  class="btn btn-primary btn-style">Đăng Ký</button>
                 </form>
                 

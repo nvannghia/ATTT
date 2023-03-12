@@ -34,7 +34,6 @@ if(isset($_POST['addtocart']) && $_POST['addtocart'])
                     && empty($image);
 
 if($validate_success != true){
-
     $fl = 0; // biến cờ thay đổi sau khi vào các vòng lặp
     //kiểm tra sp có trong giỏ hàng hay không?
     for ($i = 0; $i < sizeof($_SESSION['carts']); $i++) {
@@ -64,7 +63,7 @@ function showcart(){
                 echo '<tr>
                 
               <td >' . ($i + 1) . '</td>
-              <td>  <img style="width:200px;height:170px" src=' . $_SESSION['carts'][$i][0] . '>  </td>
+              <td>  <img style="width:250px;height:170px" src=' . $_SESSION['carts'][$i][0] . '>  </td>
               <td>' . $_SESSION['carts'][$i][3] . '</td>
               <td>' . $_SESSION['carts'][$i][1] . '</td>
               <td>' . $_SESSION['carts'][$i][2] . '</td>
