@@ -41,11 +41,11 @@
                         <a class="nav-link" href="javascript:void(0)">Liên Hệ</a>
                     </li>
                 </ul>
-                <form class="d-flex form-container" style="border:none; width:50%">
-                    <input class="form-control me-2" style="width:100%;height:40px;margin-right:5px" type="text" placeholder="Search">
-                    <button class="btn btn-primary " style="width:70px;height:40px;margin-right:5px" type="button">Search</button>
-                    <button type="button"  class="btn btn-primary btn-style">Đăng Nhập</button>
-                    <button type="button"  class="btn btn-primary btn-style">Đăng Ký</button>
+                <form class="d-flex form-container" style="border:none; width:50%" method="POST" action="searchcart.php" >
+                    <input class="form-control me-2" style="width:100%;height:40px;margin-right:5px" type="text" placeholder="Search" name="search">
+                    <input class="btn btn-primary " style="width:70px;height:40px;margin-right:5px" type="submit" name="searchs" value="search">
+                    <a class="btn btn-primary btn-style" href="login.php" >Đăng Nhập</a>
+                    <a class="btn btn-primary btn-style" href="register.php" >Đăng Ký</a>
                 </form>
                 
             </div>
