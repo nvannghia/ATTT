@@ -77,18 +77,15 @@ function showcart(){
            </tr>';
             }
             echo '<tr>
-              <th colspan="6">Tổng đơn hàng </th>
+              <th colspan="5" style="text-align:right;">Tổng đơn hàng: </th>
               <th> <div> ' . number_format($total_all) . 'vnđ </div> </th>
          </tr>';
-    } else echo "<h1>Giỏ hàng đang rỗng!<h1>";
+    } else echo "<h1 style='color:white'>Giỏ hàng đang rỗng!<h1>";
   }
 }
-
-
-require 'components/footer.php'
 ;?>
 
-<table class="table table-dark">
+<table class="table" style="color:white ;font-size:23px; border:2px solid white;">
   <thead>
     <tr>
             <th >STT</th>
@@ -104,9 +101,11 @@ require 'components/footer.php'
     <?php showcart();?>
   </tbody>
 </table>
-<form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="get">
-    <a class="btn btn-primary" href="index.php">Tiếp tục đặt hàng</a>
-     <input class="btn btn-primary" type="submit" name="delcart" value="Xóa giỏ hàng"></a>
+<form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="get" style="border:none">
+    <a class="btn btn-primary button" href="index.php">Tiếp tục đặt hàng</a>
+     <input class="btn btn-primary button" type="submit" name="delcart" value="Xóa giỏ hàng"></a>
 </form>
+
+<?php require 'components/footer.php'?>
  
 

@@ -1,7 +1,7 @@
 <?php
+session_start();
 require 'configuration/database.php';
 include "ceasar.php";
-session_start();
 if (isset($_POST['login'])) {
   $uname = $_POST['uname'] ?? '';
   $pwd = $_POST['psw'] ?? '';
@@ -67,6 +67,7 @@ if (isset($_POST['login'])) {
     </div>
   </form>
 </div>
+
 </body>
 
 </html>
